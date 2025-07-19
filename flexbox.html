@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+
+    <style>
+        .container{
+            border: 2px solid salmon;
+            display: flex;
+
+            /* For Horizontal Placement */
+            /* ------------------------- */
+            /* justify-content: flex-start; Default */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            height: 250px;
+
+            /* for Vertical Placement */
+            /* ----------------------- */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items:self-end; */
+
+            /* Flex direction */
+            /* --------------- */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+
+            /* Flex Wrap */
+            /* --------- */
+            /* flex-wrap: wrap; */
+            flex-wrap: wrap-reverse;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px dashed blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEXBOX LAYOUT</h1>
+
+    <div class="container">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+        <div class="box">BOX-6</div>
+    </div>
+</body>
+</html>
